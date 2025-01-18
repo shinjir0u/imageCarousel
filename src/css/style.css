@@ -1,0 +1,104 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*My css*/
+
+svg {
+  width: 50px;
+}
+
+.image-frame {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: 500px 50px / 500px;
+    gap: 1em;
+    justify-content: center;
+    padding: 2em;
+}
+
+.image-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.image-interaction-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slide-bubbles {
+  display: grid;
+  gap: 1em;
+  grid-template: 10px / repeat(5, 10px);
+}
+
+.slide-bubble {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.slide-bubble.active {
+  background-color: black;
+}
